@@ -21,6 +21,11 @@ body {
     max-width: 410px;
     border-radius: 7px;
     padding: 16px 25px;
+    transition: height 0.2s ease;
+}
+
+.wrapper.active {
+    height: 530px;
 }
 
 header h1 {
@@ -69,4 +74,10 @@ header p {
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+}
+
+.wrapper.active .qr-code {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05s ease;
 }
